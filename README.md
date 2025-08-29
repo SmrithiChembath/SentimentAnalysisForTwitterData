@@ -1,9 +1,13 @@
 ## Sentiment Analysis Using Twitter Data
 <br>
+
 ## Introduction
+
 Social media, particularly Twitter, has become a primary medium for expressing opinions and reactions to real-world events. This project demonstrates how Natural Language Processing (NLP) techniques can be applied to analyze such data and classify tweets as positive or negative.
 The dataset consists of 1.6 million pre-labeled tweets from Kaggle, containing both positive and negative sentiments. The project walks through the end-to-end pipeline of data collection, cleaning, feature extraction, model training, and evaluation.
+
 ## Problem Statement
+
 Twitter data is unstructured, noisy, and high-volume. Tweets often contain slang, hashtags, emojis, and abbreviations that make them challenging for traditional analysis.
 The key challenges addressed in this project include:
 * Cleaning and preprocessing raw tweets.
@@ -11,13 +15,17 @@ The key challenges addressed in this project include:
 * Converting text into numerical vectors for machine learning.
 * Building and comparing classification models.
 * Evaluating performance using standard metrics to identify the best approach.
+  
 ## Dataset
+
 Source: Kaggle Sentiment140 dataset (1.6M tweets).
 * Columns used:
 o Sentiment (0 = Negative, 4 = Positive)
 o Tweet (raw tweet text)
 The dataset was cleaned and transformed to contain only the sentiment labels and tweet text.
+
 ## Methodology
+
 1. Data Preprocessing
 * Text normalization: lowercasing, removing URLs, mentions, hashtags, numbers, and extra spaces.
 * Handling contractions (e.g., "can't" ? "can not")
@@ -45,7 +53,9 @@ Models were assessed using:
 * Accuracy
 * Precision, Recall, and F1-score
 * Confusion matrices for error analysis
+  
 ## Results
+
 * Traditional ML (BoW & TF-IDF)
 o TF-IDF outperformed BoW, achieving ~79.7% accuracy.
 o Logistic Regression and SVM delivered the strongest results among traditional classifiers.
@@ -67,7 +77,9 @@ The project uses the following technologies:
 * Modeling: scikit-learn, Hugging Face Transformers
 * Visualization: matplotlib, seaborn, wordcloud
 * Interface: Gradio
+  
 ## Project Structure
+
 *  Final-Sentiment_Analysis_for_Twitter_Data.ipynb # Main notebook: data loading, preprocessing, modeling, and evaluation
 * app.py #Gradio app for deploying the model 
 * requirements.txt # List of dependencies to reproduce the project environment
